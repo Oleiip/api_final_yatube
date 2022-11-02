@@ -3,7 +3,6 @@ from posts.models import Group, Post, User, Follow
 from rest_framework import permissions, viewsets, status, filters
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
-from django_filters.rest_framework import DjangoFilterBackend
 from api.permissions import IsAuthorOrReadOnlyPermission
 from api.serializers import (
     CommentSerializer, FollowSerializer, GroupSerializer, PostSerializer)
